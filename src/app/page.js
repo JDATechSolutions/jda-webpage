@@ -133,11 +133,11 @@ const isExperienceInView = useInView(experienceRef, {
 
 <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-  <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/10 blur-3xl rounded-full"></div>
+  <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/10 blur-lg rounded-full"></div>
 
-  <div className="absolute top-[40%] right-[-10%] w-[450px] h-[450px] bg-blue-500/10 blur-3xl rounded-full"></div>
+  <div className="absolute top-[40%] right-[-10%] w-[450px] h-[450px] bg-blue-500/10 blur-lg rounded-full"></div>
 
-  <div className="absolute bottom-[10%] left-[20%] w-[400px] h-[400px] bg-cyan-400/5 blur-3xl rounded-full"></div>
+  <div className="absolute bottom-[10%] left-[20%] w-[400px] h-[400px] bg-cyan-400/5 blur-lg rounded-full"></div>
 
 </div>
       <Navbar />
@@ -187,7 +187,7 @@ const isExperienceInView = useInView(experienceRef, {
       repeat: Infinity,
       ease: "easeInOut",
     }}
-    className="absolute top-[10%] left-[10%] w-[320px] h-[320px] bg-cyan-500/20 blur-3xl rounded-full"
+    className="absolute top-[10%] left-[10%] w-[320px] h-[320px] bg-cyan-500/20 blur-lg rounded-full"
   />
 
   <motion.div
@@ -200,7 +200,7 @@ const isExperienceInView = useInView(experienceRef, {
       repeat: Infinity,
       ease: "easeInOut",
     }}
-    className="absolute bottom-[5%] right-[10%] w-[300px] h-[300px] bg-blue-500/20 blur-3xl rounded-full"
+    className="absolute bottom-[5%] right-[10%] w-[300px] h-[300px] bg-blue-500/20 blur-lg rounded-full"
   />
 
   {/* GRID OVERLAY */}
@@ -217,7 +217,7 @@ const isExperienceInView = useInView(experienceRef, {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, duration: 0.8 }}
-      className="inline-flex items-center gap-3 border border-cyan-400/20 bg-white/5 backdrop-blur-xl rounded-full px-5 py-2 mb-8"
+      className="inline-flex items-center gap-3 border border-cyan-400/20 bg-white/5 backdrop-blur-lg rounded-full px-5 py-2 mb-8"
     >
 
       <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_15px_rgba(34,211,238,1)]"></div>
@@ -239,7 +239,7 @@ const isExperienceInView = useInView(experienceRef, {
 
       {/* GLOW */}
 
-      <span className="absolute inset-0 blur-3xl opacity-30 bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-300 bg-clip-text text-transparent">
+      <span className="absolute inset-0 blur-lg opacity-30 bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-300 bg-clip-text text-transparent">
         JDA
       </span>
 
@@ -316,7 +316,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         href="#contact"
 
-        className="border border-white/10 bg-white/5 backdrop-blur-xl hover:border-cyan-400 hover:bg-cyan-400/10 px-10 py-5 rounded-2xl font-semibold text-lg transition duration-300"
+        className="border border-white/10 bg-white/5 backdrop-blur-lg hover:border-cyan-400 hover:bg-cyan-400/10 px-10 py-5 rounded-2xl font-semibold text-lg transition duration-300"
       >
 
         Contact Us
@@ -392,7 +392,7 @@ const isExperienceInView = useInView(experienceRef, {
       },
     }}
 
-    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-xl p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
+    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-lg p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
     
   >
 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
@@ -447,7 +447,7 @@ const isExperienceInView = useInView(experienceRef, {
       },
     }}
 
-    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-xl p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
+    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-lg p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
   >
 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
     <div className="text-5xl mb-6 text-cyan-400">
@@ -501,7 +501,7 @@ const isExperienceInView = useInView(experienceRef, {
       },
     }}
 
-    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-xl p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
+    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-lg p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
   >
 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
     <div className="text-5xl mb-6 text-cyan-400">
@@ -555,7 +555,7 @@ const isExperienceInView = useInView(experienceRef, {
       },
     }}
 
-    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-xl p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
+    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-lg p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
   >
 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
     <div className="text-5xl mb-6 text-cyan-400">
@@ -609,7 +609,7 @@ const isExperienceInView = useInView(experienceRef, {
       },
     }}
 
-    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-xl p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
+    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-lg p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
   >
 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
     <div className="text-5xl mb-6 text-cyan-400">
@@ -663,7 +663,7 @@ const isExperienceInView = useInView(experienceRef, {
       },
     }}
 
-    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-xl p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
+    className="group relative overflow-hidden bg-[#111827]/80 backdrop-blur-lg p-8 rounded-[28px] border border-white/10 hover:border-cyan-400/40 hover:shadow-[0_0_45px_rgba(34,211,238,0.18)] transition duration-500 cursor-pointer"
   >
 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/0 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition duration-500"></div>
     <div className="text-5xl mb-6 text-cyan-400">
@@ -727,7 +727,7 @@ const isExperienceInView = useInView(experienceRef, {
 
   {/* GLOW */}
 
-  <div className="absolute w-[350px] h-[350px] bg-cyan-500/20 blur-3xl rounded-full"></div>
+  <div className="absolute w-[350px] h-[350px] bg-cyan-500/20 blur-lg rounded-full"></div>
 
   <motion.img
     initial={{
@@ -812,7 +812,7 @@ const isExperienceInView = useInView(experienceRef, {
     className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-2xl p-10 transition duration-500 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]"
   >
 
-    <div className="absolute top-0 right-0 w-[180px] h-[180px] bg-cyan-500/10 blur-3xl rounded-full"></div>
+    <div className="absolute top-0 right-0 w-[180px] h-[180px] bg-cyan-500/10 blur-lg rounded-full"></div>
 
     <div className="relative z-10">
 
@@ -852,7 +852,7 @@ const isExperienceInView = useInView(experienceRef, {
     className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-2xl p-10 transition duration-500 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]"
   >
 
-    <div className="absolute bottom-0 left-0 w-[180px] h-[180px] bg-blue-500/10 blur-3xl rounded-full"></div>
+    <div className="absolute bottom-0 left-0 w-[180px] h-[180px] bg-blue-500/10 blur-lg rounded-full"></div>
 
     <div className="relative z-10">
 
@@ -892,7 +892,7 @@ const isExperienceInView = useInView(experienceRef, {
     className="relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-2xl p-10 transition duration-500 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]"
   >
 
-    <div className="absolute top-0 left-0 w-[180px] h-[180px] bg-cyan-400/10 blur-3xl rounded-full"></div>
+    <div className="absolute top-0 left-0 w-[180px] h-[180px] bg-cyan-400/10 blur-lg rounded-full"></div>
 
     <div className="relative z-10">
 
@@ -940,9 +940,9 @@ const isExperienceInView = useInView(experienceRef, {
 
     {/* BACKGROUND GLOW */}
 
-    <div className="absolute top-0 left-0 w-[350px] h-[350px] bg-cyan-500/10 blur-3xl rounded-full"></div>
+    <div className="absolute top-0 left-0 w-[350px] h-[350px] bg-cyan-500/10 blur-lg rounded-full"></div>
 
-    <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-blue-500/10 blur-3xl rounded-full"></div>
+    <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-blue-500/10 blur-lg rounded-full"></div>
 
     <div className="relative z-10 grid md:grid-cols-2 gap-14 items-center">
 
@@ -976,7 +976,7 @@ const isExperienceInView = useInView(experienceRef, {
 
       <div className="grid grid-cols-2 gap-6">
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg">
 
           <h3 className="text-5xl font-black text-cyan-400 mb-4">
             {clients}+
@@ -988,7 +988,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg">
 
           <h3 className="text-5xl font-black text-cyan-400 mb-4">
             {installations}+
@@ -1000,7 +1000,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg">
 
           <h3 className="text-5xl font-black text-cyan-400 mb-4">
             {experience}+
@@ -1012,7 +1012,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg">
 
           <h3 className="text-5xl font-black text-cyan-400 mb-4">
             24/7
@@ -1288,7 +1288,7 @@ const isExperienceInView = useInView(experienceRef, {
 
     <div
       key={index}
-      className="min-w-[140px] sm:min-w-[180px] md:min-w-[220px] h-[70px] sm:h-[90px] md:h-[110px] rounded-[20px] md:rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center text-sm sm:text-lg md:text-2xl font-black tracking-[1px] md:tracking-[2px] text-white/80 hover:text-cyan-300 hover:border-cyan-400 transition duration-300"
+      className="min-w-[140px] sm:min-w-[180px] md:min-w-[220px] h-[70px] sm:h-[90px] md:h-[110px] rounded-[20px] md:rounded-[28px] border border-white/10 bg-white/5 backdrop-blur-lg flex items-center justify-center text-sm sm:text-lg md:text-2xl font-black tracking-[1px] md:tracking-[2px] text-white/80 hover:text-cyan-300 hover:border-cyan-400 transition duration-300"
     >
 
       {brand}
@@ -1390,7 +1390,7 @@ const isExperienceInView = useInView(experienceRef, {
         duration: 4,
         repeat: Infinity,
       }}
-      className="absolute right-0 top-0 h-full w-[320px] bg-blue-500/10 blur-3xl"
+      className="absolute right-0 top-0 h-full w-[320px] bg-blue-500/10 blur-lg"
     />
 
     <div className="relative z-10 h-full flex items-center justify-end px-6 md:px-20">
@@ -1519,7 +1519,7 @@ const isExperienceInView = useInView(experienceRef, {
         duration: 4,
         repeat: Infinity,
       }}
-      className="absolute left-0 top-0 h-full w-[320px] bg-cyan-500/10 blur-3xl"
+      className="absolute left-0 top-0 h-full w-[320px] bg-cyan-500/10 blur-lg"
     />
 
     <div className="relative z-10 h-full flex items-center px-6 md:px-20">
@@ -1647,7 +1647,7 @@ const isExperienceInView = useInView(experienceRef, {
         duration: 4,
         repeat: Infinity,
       }}
-      className="absolute right-0 top-0 h-full w-[320px] bg-cyan-500/10 blur-3xl"
+      className="absolute right-0 top-0 h-full w-[320px] bg-cyan-500/10 blur-lg"
     />
 
     <div className="relative z-10 h-full flex items-center justify-end px-6 md:px-20">
@@ -1775,7 +1775,7 @@ const isExperienceInView = useInView(experienceRef, {
         duration: 4,
         repeat: Infinity,
       }}
-      className="absolute left-0 top-0 h-full w-[320px] bg-cyan-500/10 blur-3xl"
+      className="absolute left-0 top-0 h-full w-[320px] bg-cyan-500/10 blur-lg"
     />
 
     <div className="relative z-10 h-full flex items-center px-6 md:px-20">
@@ -1903,7 +1903,7 @@ const isExperienceInView = useInView(experienceRef, {
         duration: 4,
         repeat: Infinity,
       }}
-      className="absolute right-0 top-0 h-full w-[320px] bg-blue-500/10 blur-3xl"
+      className="absolute right-0 top-0 h-full w-[320px] bg-blue-500/10 blur-lg"
     />
 
     <div className="relative z-10 h-full flex items-center justify-end px-6 md:px-20">
@@ -2053,7 +2053,7 @@ const isExperienceInView = useInView(experienceRef, {
 
   <a
     href="tel:+919345340119"
-    className="group relative overflow-hidden px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white font-semibold transition duration-300 hover:border-cyan-400 hover:bg-cyan-400/10 hover:scale-105 hover:-translate-y-1"
+    className="group relative overflow-hidden px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg text-white font-semibold transition duration-300 hover:border-cyan-400 hover:bg-cyan-400/10 hover:scale-105 hover:-translate-y-1"
   >
 
     <span className="relative z-10 flex items-center gap-3">
@@ -2098,9 +2098,9 @@ const isExperienceInView = useInView(experienceRef, {
           className="relative overflow-hidden rounded-[40px] border border-cyan-500/20 bg-gradient-to-br from-cyan-500/10 via-[#111827] to-[#0B0F19] p-8 md:p-20 text-center"
         >
 
-          <div className="absolute w-[400px] h-[400px] bg-cyan-500/10 blur-3xl rounded-full -top-20 -left-20"></div>
+          <div className="absolute w-[400px] h-[400px] bg-cyan-500/10 blur-lg rounded-full -top-20 -left-20"></div>
 
-          <div className="absolute w-[300px] h-[300px] bg-blue-500/10 blur-3xl rounded-full bottom-0 right-0"></div>
+          <div className="absolute w-[300px] h-[300px] bg-blue-500/10 blur-lg rounded-full bottom-0 right-0"></div>
 
           <div className="relative z-10">
 
@@ -2417,9 +2417,9 @@ whileTap={{
 
   <div className="absolute inset-0 overflow-hidden">
 
-    <div className="absolute left-0 bottom-0 w-[400px] h-[400px] bg-cyan-500/10 blur-3xl"></div>
+    <div className="absolute left-0 bottom-0 w-[400px] h-[400px] bg-cyan-500/10 blur-lg"></div>
 
-    <div className="absolute right-0 top-0 w-[350px] h-[350px] bg-blue-500/10 blur-3xl"></div>
+    <div className="absolute right-0 top-0 w-[350px] h-[350px] bg-blue-500/10 blur-lg"></div>
 
   </div>
 
