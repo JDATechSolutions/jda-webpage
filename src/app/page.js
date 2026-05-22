@@ -978,11 +978,11 @@ const isExperienceInView = useInView(experienceRef, {
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
 
-          <h3 className="text-5xl font-black text-cyan-400 mb-4">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             {clients}+
           </h3>
 
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-6">
             Trusted Clients
           </p>
 
@@ -990,11 +990,11 @@ const isExperienceInView = useInView(experienceRef, {
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
 
-          <h3 className="text-5xl font-black text-cyan-400 mb-4">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             {installations}+
           </h3>
 
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-6">
             Installations
           </p>
 
@@ -1002,11 +1002,11 @@ const isExperienceInView = useInView(experienceRef, {
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
 
-          <h3 className="text-5xl font-black text-cyan-400 mb-4">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             {experience}+
           </h3>
 
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-6">
             Years Experience
           </p>
 
@@ -1014,11 +1014,11 @@ const isExperienceInView = useInView(experienceRef, {
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
 
-          <h3 className="text-5xl font-black text-cyan-400 mb-4">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             24/7
           </h3>
 
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-6">
             Technical Support
           </p>
 
