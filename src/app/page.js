@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/Navbar"
-
+import { motion, AnimatePresence } from "framer-motion"
 
 
 import {
