@@ -12,7 +12,7 @@ function TestimonialsSection() {
 
       name: "Arjun sid Kumar",
 
-      role: "Office Administrator",
+      role: "Office Admin",
 
       image: "https://i.pravatar.cc/100?img=12",
 
