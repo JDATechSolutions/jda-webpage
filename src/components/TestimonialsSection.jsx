@@ -10,7 +10,7 @@ function TestimonialsSection() {
 
     {
 
-      name: "Arjun Kumar",
+      name: "Arjun sid Kumar",
 
       role: "Office Administrator",
 
