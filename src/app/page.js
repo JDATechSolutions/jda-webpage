@@ -2652,7 +2652,7 @@ whileTap={{
 
     <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
-      <p className="text-gray-500 text-sm">
+      <p className="text-gray-400 text-sm">
 
         © 2026 JDA Computers & Security Solutions.
         All Rights Reserved.
@@ -2665,7 +2665,7 @@ whileTap={{
           scale: 1.04,
         }}
 
-        className="text-gray-500 text-sm"
+        className="text-gray-400 text-sm"
 
       >
 
@@ -2679,18 +2679,31 @@ whileTap={{
 
 {/* BUILT BY SECTION */}
 
-<div className="w-full border-t border-cyan-400/10 mt-20 py-6 text-center">
-  <p className="text-gray-400 text-sm md:text-base">
+<div className="text-center -mt-13">
+  <p className="text-gray-300 text-base md:text-lg">
     Built & Developed by{" "}
     <span className="text-cyan-400 font-semibold">
       Noets
     </span>
   </p>
 
-  <p className="text-gray-500 text-xs md:text-sm mt-2">
+  <a
+    href="mailto:noets.business@gmail.com"
+    className="
+      inline-block
+      mt-0
+      text-cyan-400
+      text-base
+      hover:text-cyan-300
+      transition-all
+      duration-300
+    "
+  >
     noets.business@gmail.com
-  </p>
+  </a>
 </div>
+
+
 </footer>
 
     </div>
