@@ -976,7 +976,7 @@ const isExperienceInView = useInView(experienceRef, {
 
       <div className="grid grid-cols-2 gap-6">
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-5 sm:p-6 md:p-8 backdrop-blur-xl min-h-[160px] flex flex-col justify-center">
 
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             {clients}+
@@ -988,7 +988,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-5 sm:p-6 md:p-8 backdrop-blur-xl min-h-[160px] flex flex-col justify-center">
 
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             {installations}+
@@ -1000,7 +1000,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-5 sm:p-6 md:p-8 backdrop-blur-xl min-h-[160px] flex flex-col justify-center">
 
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             {experience}+
@@ -1012,7 +1012,7 @@ const isExperienceInView = useInView(experienceRef, {
 
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-5 sm:p-6 md:p-8 backdrop-blur-xl min-h-[160px] flex flex-col justify-center">
 
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400 mb-3">
             24/7
