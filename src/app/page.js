@@ -2677,6 +2677,8 @@ whileTap={{
 
   </div>
 
+
+
 {/* BUILT BY SECTION */}
 
 <div className="text-center -mt-12 relative z-50">
@@ -2688,20 +2690,22 @@ whileTap={{
     </span>
   </p>
 
-<a
-  href="mailto:noets.business@gmail.com"
-  className="
-    inline-block
-    text-cyan-400
-    text-base
-    hover:text-cyan-300
-    transition-all
-    duration-300
-    cursor-pointer
-  "
->
-  noets.business@gmail.com
-</a>
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=noets.business@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      inline-block
+      text-cyan-400
+      text-base
+      hover:text-cyan-300
+      transition-all
+      duration-300
+      cursor-pointer
+    "
+  >
+    noets.business@gmail.com
+  </a>
 
 </div>
 
