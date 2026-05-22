@@ -2688,19 +2688,21 @@ whileTap={{
   </p>
 
   <a
-    href="mailto:noets.business@gmail.com"
-    className="
-      inline-block
-      mt-0
-      text-cyan-400
-      text-base
-      hover:text-cyan-300
-      transition-all
-      duration-300
-    "
-  >
-    noets.business@gmail.com
-  </a>
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=noets.business@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    inline-block
+    mt-0
+    text-cyan-400
+    text-base
+    hover:text-cyan-300
+    transition-all
+    duration-300
+  "
+>
+  noets.business@gmail.com
+</a>
 </div>
 
 
