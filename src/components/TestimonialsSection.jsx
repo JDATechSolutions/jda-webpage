@@ -10,7 +10,7 @@ function TestimonialsSection() {
 
     {
       name: "Arjun Kumar",
-      role: "Office Administrator",
+      role: "Office Admin",
       image: "https://i.pravatar.cc/100?img=12",
       feedback:
         "Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time.",
@@ -68,7 +68,7 @@ function TestimonialsSection() {
 
   return (
 
-    <section className="max-w-7xl mx-auto px-6 py-24 overflow-hidden">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-24 overflow-hidden">
 
       {/* HEADER */}
 
@@ -159,7 +159,7 @@ function TestimonialsSection() {
 
         {/* TESTIMONIAL CARDS */}
 
-        <div className="relative w-full h-[420px] flex items-center justify-center overflow-hidden">
+        <div className="relative w-full h-[470px] flex items-center justify-center overflow-hidden">
 
           {testimonials.map((item, index) => {
 
@@ -209,18 +209,22 @@ function TestimonialsSection() {
 
                 animate={{
 
-                  x: position * 280,
+                  x:
+                    typeof window !== "undefined" &&
+                    window.innerWidth < 768
+                      ? position * 220
+                      : position * 320,
 
-                  scale: position === 0 ? 1 : 0.78,
+                  scale: position === 0 ? 1 : 0.82,
 
-                  rotateY: position * -35,
+                  rotateY: position * -25,
 
                   opacity:
                     Math.abs(position) > 1
-                      ? 0
+                      ? 0.18
                       : position === 0
                       ? 1
-                      : 0.35,
+                      : 0.45,
 
                   zIndex: position === 0 ? 20 : 10,
 
@@ -236,9 +240,10 @@ function TestimonialsSection() {
 
                 className="
                   absolute
-                  w-[320px]
-                  sm:w-[370px]
+                  w-[260px]
+                  sm:w-[320px]
                   md:w-[420px]
+                  min-h-[280px]
                   rounded-[35px]
                   overflow-hidden
                   border
@@ -246,7 +251,8 @@ function TestimonialsSection() {
                   bg-white/5
                   backdrop-blur-2xl
                   shadow-[0_20px_80px_rgba(0,255,255,0.08)]
-                  p-8
+                  p-6
+                  md:p-8
                   touch-pan-y
                 "
 
@@ -264,7 +270,7 @@ function TestimonialsSection() {
 
                   {/* PROFILE */}
 
-                  <div className="flex items-center gap-4 mb-8">
+                  <div className="flex items-center gap-3 md:gap-4 mb-6">
 
                     <div className="relative">
 
@@ -275,8 +281,10 @@ function TestimonialsSection() {
                         alt={item.name}
 
                         className="
-                          w-16
-                          h-16
+                          w-14
+                          h-14
+                          md:w-16
+                          md:h-16
                           rounded-full
                           object-cover
                           border-2
@@ -290,11 +298,11 @@ function TestimonialsSection() {
 
                     <div>
 
-                      <h3 className="text-2xl font-semibold">
+                      <h3 className="text-xl md:text-2xl font-semibold">
                         {item.name}
                       </h3>
 
-                      <p className="text-gray-400 text-sm">
+                      <p className="text-gray-400 text-xs md:text-sm">
                         {item.role}
                       </p>
 
@@ -304,7 +312,7 @@ function TestimonialsSection() {
 
                   {/* FEEDBACK */}
 
-                  <p className="text-gray-300 leading-8 text-lg">
+                  <p className="text-gray-300 leading-8 text-base md:text-lg">
                     {item.feedback}
                   </p>
 
