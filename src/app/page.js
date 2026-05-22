@@ -20,7 +20,7 @@ import {
 import { HiOutlineWifi } from "react-icons/hi"
 
 import {
-  motion,
+
   useScroll,
   useSpring,
   useInView,
