@@ -49,19 +49,7 @@ export default function Home() {
   const [selectedProject, setSelectedProject] = useState(null)
   const experienceRef = useRef(null)
 
- const isMobile =
-  typeof window !== "undefined" &&
-  window.innerWidth < 768
-
-const isExperienceInView = useInView(experienceRef, {
-  once: true,
-
-  amount: isMobile ? 0.9 : 0.4,
-
-  margin: isMobile
-    ? "0px 0px -250px 0px"
-    : "0px",
-})
+ 
 
   /* PREMIUM FADE UP ANIMATION */
 
