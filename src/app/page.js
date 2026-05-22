@@ -49,10 +49,10 @@ export default function Home() {
   const [selectedProject, setSelectedProject] = useState(null)
   const experienceRef = useRef(null)
 
-const isExperienceInView = useInView(experienceRef, {
-  once: true,
-  amount: 0.4,
-})
+  const isExperienceInView = useInView(experienceRef, {
+    once: true,
+    amount: 0.7,
+  })
 
   /* PREMIUM FADE UP ANIMATION */
 
