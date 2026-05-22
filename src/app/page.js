@@ -2681,7 +2681,7 @@ whileTap={{
 
 <div className="text-center -mt-13">
   <p className="text-gray-300 text-base md:text-lg">
-    Built & Developed by{" "}
+    Built & Managed by{" "}
     <span className="text-cyan-400 font-semibold">
       Noets
     </span>
