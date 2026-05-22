@@ -2677,6 +2677,20 @@ whileTap={{
 
   </div>
 
+{/* BUILT BY SECTION */}
+
+<div className="w-full border-t border-cyan-400/10 mt-20 py-6 text-center">
+  <p className="text-gray-400 text-sm md:text-base">
+    Built & Developed by{" "}
+    <span className="text-cyan-400 font-semibold">
+      Noets
+    </span>
+  </p>
+
+  <p className="text-gray-500 text-xs md:text-sm mt-2">
+    noets.business@gmail.com
+  </p>
+</div>
 </footer>
 
     </div>
