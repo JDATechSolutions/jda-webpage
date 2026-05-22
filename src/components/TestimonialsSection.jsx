@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion"
+
 import { useState } from "react"
 
 function TestimonialsSection() {
@@ -8,57 +9,86 @@ function TestimonialsSection() {
   const testimonials = [
 
     {
+
       name: "Arjun Kumar",
+
       role: "Office Administrator",
+
       image: "https://i.pravatar.cc/100?img=12",
+
       feedback:
         "Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time.",
+
     },
 
     {
+
       name: "Vishnu Raj",
+
       role: "Business Owner",
+
       image: "https://i.pravatar.cc/100?img=32",
+
       feedback:
         "Very reliable service and clean installation work. The team was professional and highly knowledgeable.",
+
     },
 
     {
+
       name: "Naveen Das",
+
       role: "Store Manager",
+
       image: "https://i.pravatar.cc/100?img=45",
+
       feedback:
         "Fast response, quality equipment, and smooth setup. Highly recommended for CCTV and computer services.",
+
     },
 
     {
+
       name: "Rahul Menon",
+
       role: "Company Director",
+
       image: "https://i.pravatar.cc/100?img=55",
+
       feedback:
         "Excellent customer service and premium quality installation. Everything was handled professionally.",
+
     },
 
     {
+
       name: "Ajith Kumar",
+
       role: "Retail Shop Owner",
+
       image: "https://i.pravatar.cc/100?img=60",
+
       feedback:
         "Their networking and CCTV setup improved our business security greatly. Smooth and reliable support.",
+
     },
 
   ]
 
   const nextSlide = () => {
+
     setActiveIndex((prev) =>
       prev === testimonials.length - 1 ? 0 : prev + 1
     )
+
   }
 
   const prevSlide = () => {
+
     setActiveIndex((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
     )
+
   }
 
   return (
@@ -68,22 +98,27 @@ function TestimonialsSection() {
       {/* HEADER */}
 
       <motion.div
+
         initial={{
           opacity: 0,
           y: 60,
         }}
+
         whileInView={{
           opacity: 1,
           y: 0,
         }}
+
         transition={{
           duration: 1,
           ease: [0.22, 1, 0.36, 1],
         }}
+
         viewport={{
-  once: true,
-  amount: 0.15,
-}}
+          once: true,
+          amount: 0.15,
+        }}
+
         className="text-center mb-20"
       >
 
@@ -109,13 +144,17 @@ function TestimonialsSection() {
         {/* LEFT BUTTON */}
 
         <motion.button
+
           whileHover={{
             scale: 1.1,
           }}
+
           whileTap={{
             scale: 0.95,
           }}
+
           onClick={prevSlide}
+
           className="
             absolute
             left-0
@@ -135,7 +174,9 @@ function TestimonialsSection() {
             duration-500
           "
         >
+
           ←
+
         </motion.button>
 
         {/* TESTIMONIAL CARDS */}
@@ -157,65 +198,80 @@ function TestimonialsSection() {
             return (
 
               <motion.div
-  key={index}
 
-  drag={window.innerWidth < 768 ? "x" : false}
+                key={index}
 
-  dragConstraints={{
-    left: 0,
-    right: 0,
-  }}
+                drag={
+                  typeof window !== "undefined" &&
+                  window.innerWidth < 768
+                    ? "x"
+                    : false
+                }
 
-  dragElastic={0.2}
+                dragConstraints={{
+                  left: 0,
+                  right: 0,
+                }}
 
-  onDragEnd={(e, info) => {
+                dragElastic={0.2}
 
-    if (info.offset.x < -100) {
-      nextSlide()
-    }
+                onDragEnd={(e, info) => {
 
-    if (info.offset.x > 100) {
-      prevSlide()
-    }
+                  if (info.offset.x < -100) {
+                    nextSlide()
+                  }
 
-  }}
+                  if (info.offset.x > 100) {
+                    prevSlide()
+                  }
 
-  animate={{
-    x: position * 280,
-    scale: position === 0 ? 1 : 0.78,
-    rotateY: position * -35,
-    opacity:
-      Math.abs(position) > 1
-        ? 0
-        : position === 0
-        ? 1
-        : 0.35,
-    zIndex: position === 0 ? 20 : 10,
-  }}
+                }}
 
-  transition={{
-    duration: 1.2,
-    ease: [0.22, 1, 0.36, 1],
-  }}
+                animate={{
 
-  className="
-    absolute
-    w-[370px]
-    md:w-[420px]
-    rounded-[35px]
-    overflow-hidden
-    border
-    border-cyan-400/10
-    bg-white/5
-    backdrop-blur-2xl
-    shadow-[0_20px_80px_rgba(0,255,255,0.08)]
-    p-8
-  "
+                  x: position * 280,
 
-  style={{
-    transformStyle: "preserve-3d",
-  }}
->
+                  scale: position === 0 ? 1 : 0.78,
+
+                  rotateY: position * -35,
+
+                  opacity:
+                    Math.abs(position) > 1
+                      ? 0
+                      : position === 0
+                      ? 1
+                      : 0.35,
+
+                  zIndex: position === 0 ? 20 : 10,
+
+                }}
+
+                transition={{
+
+                  duration: 1.2,
+
+                  ease: [0.22, 1, 0.36, 1],
+
+                }}
+
+                className="
+                  absolute
+                  w-[370px]
+                  md:w-[420px]
+                  rounded-[35px]
+                  overflow-hidden
+                  border
+                  border-cyan-400/10
+                  bg-white/5
+                  backdrop-blur-2xl
+                  shadow-[0_20px_80px_rgba(0,255,255,0.08)]
+                  p-8
+                "
+
+                style={{
+                  transformStyle: "preserve-3d",
+                }}
+              >
 
                 {/* GLOW */}
 
@@ -230,8 +286,11 @@ function TestimonialsSection() {
                     <div className="relative">
 
                       <img
+
                         src={item.image}
+
                         alt={item.name}
+
                         className="
                           w-16
                           h-16
@@ -279,13 +338,17 @@ function TestimonialsSection() {
         {/* RIGHT BUTTON */}
 
         <motion.button
+
           whileHover={{
             scale: 1.1,
           }}
+
           whileTap={{
             scale: 0.95,
           }}
+
           onClick={nextSlide}
+
           className="
             absolute
             right-0
@@ -305,7 +368,9 @@ function TestimonialsSection() {
             duration-500
           "
         >
+
           →
+
         </motion.button>
 
       </div>
