@@ -192,7 +192,10 @@ function TestimonialsSection() {
 
                 onDragEnd={(e, info) => {
 
-                  if (window.innerWidth >= 768) return
+                  if (
+                    typeof window !== "undefined" &&
+                    window.innerWidth >= 768
+                  ) return
 
                   if (info.offset.x < -50) {
                     nextSlide()
@@ -206,17 +209,11 @@ function TestimonialsSection() {
 
                 animate={{
 
-                  x:
-                    window.innerWidth < 768
-                      ? position * 340
-                      : position * 280,
+                  x: position * 280,
 
                   scale: position === 0 ? 1 : 0.78,
 
-                  rotateY:
-                    window.innerWidth < 768
-                      ? 0
-                      : position * -35,
+                  rotateY: position * -35,
 
                   opacity:
                     Math.abs(position) > 1
