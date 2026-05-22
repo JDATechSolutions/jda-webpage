@@ -157,40 +157,65 @@ function TestimonialsSection() {
             return (
 
               <motion.div
-                key={index}
-                animate={{
-                  x: position * 280,
-                  scale: position === 0 ? 1 : 0.78,
-                  rotateY: position * -35,
-                  opacity:
-                    Math.abs(position) > 1
-                      ? 0
-                      : position === 0
-                      ? 1
-                      : 0.35,
-                  zIndex: position === 0 ? 20 : 10,
-                }}
-                transition={{
-                  duration: 1.2,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                className="
-                  absolute
-                  w-[370px]
-                  md:w-[420px]
-                  rounded-[35px]
-                  overflow-hidden
-                  border
-                  border-cyan-400/10
-                  bg-white/5
-                  backdrop-blur-2xl
-                  shadow-[0_20px_80px_rgba(0,255,255,0.08)]
-                  p-8
-                "
-                style={{
-                  transformStyle: "preserve-3d",
-                }}
-              >
+  key={index}
+
+  drag={window.innerWidth < 768 ? "x" : false}
+
+  dragConstraints={{
+    left: 0,
+    right: 0,
+  }}
+
+  dragElastic={0.2}
+
+  onDragEnd={(e, info) => {
+
+    if (info.offset.x < -100) {
+      nextSlide()
+    }
+
+    if (info.offset.x > 100) {
+      prevSlide()
+    }
+
+  }}
+
+  animate={{
+    x: position * 280,
+    scale: position === 0 ? 1 : 0.78,
+    rotateY: position * -35,
+    opacity:
+      Math.abs(position) > 1
+        ? 0
+        : position === 0
+        ? 1
+        : 0.35,
+    zIndex: position === 0 ? 20 : 10,
+  }}
+
+  transition={{
+    duration: 1.2,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+
+  className="
+    absolute
+    w-[370px]
+    md:w-[420px]
+    rounded-[35px]
+    overflow-hidden
+    border
+    border-cyan-400/10
+    bg-white/5
+    backdrop-blur-2xl
+    shadow-[0_20px_80px_rgba(0,255,255,0.08)]
+    p-8
+  "
+
+  style={{
+    transformStyle: "preserve-3d",
+  }}
+>
 
                 {/* GLOW */}
 
