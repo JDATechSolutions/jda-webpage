@@ -9,68 +9,43 @@ function TestimonialsSection() {
   const testimonials = [
 
     {
-
-      name: "Arjun sid Kumar",
-
-      role: "Office Admin",
-
+      name: "Arjun Kumar",
+      role: "Office Administrator",
       image: "https://i.pravatar.cc/100?img=12",
-
       feedback:
         "Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time.",
-
     },
 
     {
-
       name: "Vishnu Raj",
-
       role: "Business Owner",
-
       image: "https://i.pravatar.cc/100?img=32",
-
       feedback:
         "Very reliable service and clean installation work. The team was professional and highly knowledgeable.",
-
     },
 
     {
-
       name: "Naveen Das",
-
       role: "Store Manager",
-
       image: "https://i.pravatar.cc/100?img=45",
-
       feedback:
         "Fast response, quality equipment, and smooth setup. Highly recommended for CCTV and computer services.",
-
     },
 
     {
-
       name: "Rahul Menon",
-
       role: "Company Director",
-
       image: "https://i.pravatar.cc/100?img=55",
-
       feedback:
         "Excellent customer service and premium quality installation. Everything was handled professionally.",
-
     },
 
     {
-
       name: "Ajith Kumar",
-
       role: "Retail Shop Owner",
-
       image: "https://i.pravatar.cc/100?img=60",
-
       feedback:
         "Their networking and CCTV setup improved our business security greatly. Smooth and reliable support.",
-
     },
 
   ]
@@ -181,7 +156,7 @@ function TestimonialsSection() {
 
         {/* TESTIMONIAL CARDS */}
 
-        <div className="relative w-full h-[420px] flex items-center justify-center">
+        <div className="relative w-full h-[420px] flex items-center justify-center overflow-hidden">
 
           {testimonials.map((item, index) => {
 
@@ -201,27 +176,24 @@ function TestimonialsSection() {
 
                 key={index}
 
-                drag={
-                  typeof window !== "undefined" &&
-                  window.innerWidth < 768
-                    ? "x"
-                    : false
-                }
+                drag="x"
 
                 dragConstraints={{
                   left: 0,
                   right: 0,
                 }}
 
-                dragElastic={0.2}
+                dragElastic={0.15}
 
                 onDragEnd={(e, info) => {
 
-                  if (info.offset.x < -100) {
+                  if (window.innerWidth > 768) return
+
+                  if (info.offset.x < -50) {
                     nextSlide()
                   }
 
-                  if (info.offset.x > 100) {
+                  if (info.offset.x > 50) {
                     prevSlide()
                   }
 
@@ -256,7 +228,8 @@ function TestimonialsSection() {
 
                 className="
                   absolute
-                  w-[370px]
+                  w-[340px]
+                  sm:w-[370px]
                   md:w-[420px]
                   rounded-[35px]
                   overflow-hidden
@@ -266,6 +239,7 @@ function TestimonialsSection() {
                   backdrop-blur-2xl
                   shadow-[0_20px_80px_rgba(0,255,255,0.08)]
                   p-8
+                  touch-pan-y
                 "
 
                 style={{
