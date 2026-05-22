@@ -92,12 +92,12 @@ export default function Home() {
   const interval = setInterval(() => {
 
     if (clientsCount < 85) {
-      clientsCount += 10
+      clientsCount += 3
       setClients(clientsCount)
     }
 
     if (installationsCount < 420) {
-      installationsCount += 64
+      installationsCount += 6
 
       setInstallations(
         installationsCount > 420
