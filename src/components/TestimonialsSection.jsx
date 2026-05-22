@@ -10,7 +10,7 @@ function TestimonialsSection() {
 
     {
       name: "Arjun Kumar",
-      role: "Office Admin",
+      role: "Office Adminstrator",
       image: "https://i.pravatar.cc/100?img=12",
       feedback:
         "Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time.",
@@ -212,19 +212,19 @@ function TestimonialsSection() {
                   x:
                     typeof window !== "undefined" &&
                     window.innerWidth < 768
-                      ? position * 220
-                      : position * 320,
+                      ? position * 240
+                      : position * 340,
 
-                  scale: position === 0 ? 1 : 0.82,
+                  scale: position === 0 ? 1 : 0.86,
 
                   rotateY: position * -25,
 
                   opacity:
                     Math.abs(position) > 1
-                      ? 0.18
+                      ? 0.22
                       : position === 0
                       ? 1
-                      : 0.45,
+                      : 0.55,
 
                   zIndex: position === 0 ? 20 : 10,
 
@@ -240,8 +240,8 @@ function TestimonialsSection() {
 
                 className="
                   absolute
-                  w-[260px]
-                  sm:w-[320px]
+                  w-[290px]
+                  sm:w-[340px]
                   md:w-[420px]
                   min-h-[280px]
                   rounded-[35px]
