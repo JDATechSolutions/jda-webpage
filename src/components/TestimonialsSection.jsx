@@ -125,7 +125,7 @@ function TestimonialsSection() {
             h-14
             rounded-full
             bg-[#111827]/80
-            backdrop-blur-lg
+            backdrop-blur-xl
             border
             border-cyan-400/20
             hover:border-cyan-400
@@ -270,7 +270,7 @@ function TestimonialsSection() {
             h-14
             rounded-full
             bg-[#111827]/80
-            backdrop-blur-lg
+            backdrop-blur-xl
             border
             border-cyan-400/20
             hover:border-cyan-400

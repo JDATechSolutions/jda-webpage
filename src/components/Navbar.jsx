@@ -106,7 +106,7 @@ function Navbar() {
 
         scrolled
 
-          ? "bg-[#050816]/65 backdrop-blur-lg border-b border-cyan-400/10 shadow-[0_10px_50px_rgba(0,0,0,0.45)]"
+          ? "bg-[#050816]/65 backdrop-blur-3xl border-b border-cyan-400/10 shadow-[0_10px_50px_rgba(0,0,0,0.45)]"
 
           : "bg-transparent"
 
@@ -117,7 +117,7 @@ function Navbar() {
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <div className="absolute top-[-80px] left-1/2 -translate-x-1/2 w-[520px] h-[220px] bg-cyan-500/10 blur-lg"></div>
+        <div className="absolute top-[-80px] left-1/2 -translate-x-1/2 w-[520px] h-[220px] bg-cyan-500/10 blur-3xl"></div>
 
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"></div>
 
@@ -224,7 +224,7 @@ function Navbar() {
                         damping: 30,
                       }}
 
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-cyan-500/20 border border-cyan-400/20 backdrop-blur-lg shadow-[0_0_25px_rgba(34,211,238,0.18)]"
+                      className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-cyan-500/20 border border-cyan-400/20 backdrop-blur-xl shadow-[0_0_25px_rgba(34,211,238,0.18)]"
 
                     />
 
@@ -291,7 +291,7 @@ function Navbar() {
           ease: [0.22, 1, 0.36, 1],
         }}
 
-        className="md:hidden overflow-hidden bg-[#050816]/95 backdrop-blur-lg border-t border-white/10"
+        className="md:hidden overflow-hidden bg-[#050816]/95 backdrop-blur-3xl border-t border-white/10"
 
       >
 
