@@ -13,7 +13,7 @@ function TestimonialsSection() {
       role: "Office Adminstrator",
       image: "https://i.pravatar.cc/100?img=12",
       feedback:
-        "Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time.Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on timeProfessional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time",
+        "Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on time.Professional installation and excellent support. Their CCTV and networking setup was completed perfectly and on timeProfessional installation and excellent support. Their CCTV and networking setup was ",
     },
 
     {
