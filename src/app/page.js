@@ -97,7 +97,7 @@ export default function Home() {
     }
 
     if (installationsCount < 420) {
-      installationsCount += 3
+      installationsCount += 5
 
       setInstallations(
         installationsCount > 420
